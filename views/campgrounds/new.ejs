@@ -1,38 +1,42 @@
 <% layout('layouts/boilerplate') %>
 <div class="row">
-    <h1 class="text-center">New Campground</h1>
+    <h1 class="text-center">New Food</h1>
     <div class="col-6 offset-3">
-        <form action="/campgrounds" method="POST">
+        <form action="/nutrition" method="POST">
             <div class="mb-3">
-                <label class="form-label" for="title">Title</label>
-                <input class="form-control" type="text" id="title" name="campground[title]">
+                <label class="form-label" for="title">Food</label>
+                <input class="form-control" type="text" id="title" name="nutrition[food]">
             </div>
             <div class="mb-3">
-                <label class="form-label" for="location">Location</label>
-                <input class="form-control" type="text" id="location" name="campground[location]">
+                <label class="form-label" for="location">Protein</label>
+                <input class="form-control" type="text" id="location" name="nutrition[protein]">
             </div>
             <div class="mb-3">
-                <label class="form-label" for="image">Image Url</label>
-                <input class="form-control" type="text" id="image" name="campground[image]">
+                <label class="form-label" for="image">Fat</label>
+                <input class="form-control" type="text" id="image" name="nutrition[fat]">
             </div>
             <div class="mb-3">
+                <label class="form-label" for="image">Carbs</label>
+                <input class="form-control" type="text" id="image" name="nutrition[carbs]">
+            </div>
+            <!-- <div class="mb-3">
                 <div class="form-label" for="price">Campground Price</div>
                 <div class="input-group">
                     <span class="input-group-text" id="price-label">$</span>
                     <input type="text" class="form-control" id="price" placeholder="0.00" aria-label="price"
                         aria-describedby="price-label" name="campground[price]">
                         <!-- aria-describedby connects to the id in the span to connect the two for a screen reader  -->
-                </div>
+                <!-- </div>
             </div>
             <div class="mb-3">
                 <label class="form-label" for="description">Description</label>
                 <textarea class="form-control" type="text" id="description" name="campground[description]"></textarea>
-            </div>
+            </div> --> -->
             <div class="mb-3">
-                <button class="btn btn-success">Add Campground</button>
+                <button class="btn btn-success">Add Food</button>
             </div>
         </form>
-        <a href="/campgrounds">All Campgrounds</a>
+        <a href="/nutrition">All Foods</a>
     </div>
 </div>
 

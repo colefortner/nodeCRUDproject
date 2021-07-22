@@ -2,23 +2,23 @@
 
 <h1>All Campgrounds</h1>
 <div>
-    <a href="/campgrounds/new">Add Campground</a>
+    <a href="/nutrition/new">Add Campground</a>
 </div>
 
-<% for (let campground of campgrounds) { %>
+<% for (let item of nutritionList) { %>
     <div class="card" mb-3>
         <div class="row">
-            <div class="col-md-4">
-                <img src="<%= campground.image %>" alt="" class="img-fluid">
-            </div>
+            <!-- <div class="col-md-4">
+                <img src="" alt="" class="img-fluid">
+            </div> -->
             <div class="col-md-8">
                 <div class="card-body">
-                    <h5 class="card-title"><%= campground.title %></h5>
-                    <p class="card-text"><%= campground.description %></p>
+                    <h5 class="card-title"><%= item.food %></h5>
+                    <p class="card-text"><%= item.protein %></p>
                     <p class="card-text">
-                        <small class="text-muted"><%= campground.location %></small>
+                        <small class="text-muted"><%= item.fat %></small>
                     </p>
-                    <a class="btn btn-primary" href="/campgrounds/<%= campground._id %>">View <%= campground.title %></a>
+                    <a class="btn btn-primary" href="/nutrition/<%= item._id %>">View <%= item.food %></a>
                 </div>
             </div>
         </div>
